@@ -50,7 +50,7 @@ namespace APIMysql.Controllers
 
         // PUT
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutConsultas(int id, Consultas consultas)
+        public async Task<IActionResult> UpdateConsultas(int id, Consultas consultas)
         {
             if (id != consultas.MedicoId)
             {
